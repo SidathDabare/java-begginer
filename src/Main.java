@@ -11,7 +11,7 @@ public class Main {
         // change the name of the second student
         students[1].setName("Bobby");
         // remove the third student
-        students[2] = null;
+        // students[2] = null;
 
         for (Student student : students) {
             if (student != null) {
@@ -19,7 +19,12 @@ public class Main {
             }
         }
 
-
+        int num[] = {12, 14, 17, 12, 100};
+        int sum = 0;
+        for (int i = 0; i < num.length; i++) {
+            sum += num[i];
+        }
+        System.out.println("SUM IS : " + sum);
 
 
 // _____________SWITCH CASE OPERATION________________________
