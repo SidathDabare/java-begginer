@@ -1,15 +1,36 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
+        Student[] students = new Student[4];
+        students[0] = new Student("Alice", 20, true);
+        students[1] = new Student("Bob", 21, true);
+        students[2] = new Student("Charlie", 22, false);
+        students[3] = new Student("Sidath", 32, true);
+
+        // change the name of the second student
+        students[1].setName("Bobby");
+        // remove the third student
+        students[2] = null;
+
+        for (Student student : students) {
+            if (student != null) {
+                System.out.println(student.getName() + ", " + student.getAge() + ", " + student.isStudent());
+            }
+        }
+
+
+
 
 // _____________SWITCH CASE OPERATION________________________
 
-        SwitchCase switchCaseObj = new SwitchCase();
-
-        double num1 = switchCaseObj.getFirstValue();
-        double num2 = switchCaseObj.getSecondValue();
-        String action = switchCaseObj.getOperationValue();
-
-        switchCaseObj.calculate(num1, num2, action);
+//        SwitchCase switchCaseObj = new SwitchCase();
+//
+//        double num1 = switchCaseObj.getFirstValue();
+//        double num2 = switchCaseObj.getSecondValue();
+//        String action = switchCaseObj.getOperationValue();
+//
+//        switchCaseObj.calculate(num1, num2, action);
 
 // _____________IF ELSE OPERATION______________________________
 
